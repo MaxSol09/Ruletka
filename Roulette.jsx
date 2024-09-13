@@ -37,15 +37,10 @@ const Roulette = () => {
             setItems(prevItems => [...prevItems, getRandomItem()])
         }, 100)
 
-        const timeout = setTimeout(() => {
+        setTimeout(() => {
             clearInterval(interval)
             setItems(prevItems => [...prevItems, getRandomItem()])
         }, spinTime)
-
-        return () => {
-            clearInterval(interval)
-            clearTimeout(timeout)
-        }
     }
 
     const getMiddleItem = (arr) => {

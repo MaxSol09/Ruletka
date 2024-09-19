@@ -4,7 +4,7 @@ import Roulette from './Roulette';
 
 function App() {
   return (
-<Roulette/>
+    <Roulette/>
   );
 }
 
